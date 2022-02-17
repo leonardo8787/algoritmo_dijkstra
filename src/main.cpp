@@ -1,4 +1,4 @@
-#include "dijkstra.cpp"
+#include "dijkstra.hpp"
 
 int main(int argc, char *argv[])
 {
@@ -17,30 +17,32 @@ int main(int argc, char *argv[])
 
     cout << "Dijkstra - software buscador de menor caminho! " << endl;
 
-	cout << "Menu: " << endl;
-	cout << "o - sair" << endl;
-	cout << "1 - imprimir grafo" << endl;
-	cout << "2 - checar caminhos" << endl;
-	cin >> op;
-
-	switch (op)
-	{
-	case 0:	
-		return 0;
-		break;
-	case 1:
-		cout << "indisponível no momento!" << endl;
-		break;
-	case 2: 
-		cout << "De onde está partindo ? " << endl;
-		cin >> inicio;
-		cout << "Onde deseja ir ? " << endl;
-		cin >> fim;
-		cout << "\n\ndistância mínima: " << g.dijkstra(inicio, fim) << endl;
-		break;
-	default:
-		cout << "Digite uma opção válida!" << endl;
-		break;
-	}
+	do{
+		cout << "Menu: " << endl;
+		cout << "o - sair" << endl;
+		cout << "1 - imprimir grafo" << endl;
+		cout << "2 - checar caminhos" << endl;
+		cin >> op;
+		switch (op)
+		{
+		case 0:	
+			return 0;
+			break;
+		case 1:
+			cout << "indisponível no momento!" << endl;
+			break;
+		case 2: 
+			cout << "De onde está partindo ? " << endl;
+			cin >> inicio;
+			cout << "Onde deseja ir ? " << endl;
+			cin >> fim;
+			cout << "\n\ndistância mínima: " << g.dijkstra(inicio, fim) << endl;
+			break;
+		default:
+			cout << "Digite uma opção válida!" << endl;
+			break;
+		}
+	}while(op != 0);
+	
 	return 0;
 }
