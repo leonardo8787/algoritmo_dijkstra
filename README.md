@@ -21,5 +21,5 @@ O algoritmo considera um conjunto S de menores caminhos, iniciado com um vértic
 Um exemplo prático do problema que pode ser resolvido pelo algoritmo de Dijkstra é: alguém precisa se deslocar de uma cidade para outra. Para isso, ela dispõe de várias estradas, que passam por diversas cidades. Qual delas oferece uma trajetória de menor caminho?
 
 <p align = "center">
-    <img src="https://pt.wikipedia.org/wiki/Ficheiro:Dijkstra_Animation.gif" alt="dijkstra" width="600"></img>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif" alt="dijkstra" width="300"></img>
 </p>
